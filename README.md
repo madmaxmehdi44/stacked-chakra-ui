@@ -10,7 +10,6 @@ This is a starterpack which includes [ReactJs](https://reactjs.org/), [tRPC](htt
 ## Requirements
 
 - Please install [Yarn](https://yarnpkg.com/getting-started/install) as the package manager.
-- Rename the files [`example.env`](./example.env) and [`example.env.local`](./example.env.local), by removing `example` from their filename. 
 - Make sure you have these following [Environtment](./example.env) variables set:
   - `NEXTAUTH_URL` Can be made via the command `openssl  rand -base64 32` (generates a random base64 string with the length of 32 characters)
   - `DATABASE_URL`
