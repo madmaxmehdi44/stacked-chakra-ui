@@ -1,8 +1,10 @@
-import { ChakraProvider, cookieStorageManager, localStorageManager, theme } from "@chakra-ui/react";
+import { ChakraProvider, cookieStorageManager, localStorageManager } from "@chakra-ui/react";
 import { SessionProvider } from "next-auth/react";
 import { AppProps } from "next/app";
 import { IconContext } from "phosphor-react";
 import { PropsWithChildren } from "react";
+
+import { theme } from "./_theme";
 
 export const AllInOnProvider = ({ pageProps, children }: PropsWithChildren<{ pageProps: AppProps["pageProps"] }>) => {
   const colorModeManager =
