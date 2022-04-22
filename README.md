@@ -5,13 +5,14 @@ This is a starterpack which includes [ReactJs](https://reactjs.org/), [tRPC](htt
 
 ## Deployments
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foezguerisbert%2Fweb-fullstack-starter&env=NEXTAUTH_URL,DATABASE_URL&demo-title=Web-FullStack-Starter&demo-description=This%20is%20a%20starterpack%20with%20ReactJs%2C%20tRPC%2C%20Prisma%2C%20NextJs%2C%20Next-Auth%2C%20Next-SEO%20%26%20Chakra-UI&skippable-integrations=1)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foezguerisbert%2Fweb-fullstack-starter&env=NEXTAUTH_URL,NEXTAUTH_SECRET,DATABASE_URL&demo-title=Web-FullStack-Starter&demo-description=This%20is%20a%20starterpack%20with%20ReactJs%2C%20tRPC%2C%20Prisma%2C%20NextJs%2C%20Next-Auth%2C%20Next-SEO%20%26%20Chakra-UI&skippable-integrations=1)
 
 ## Requirements
 
 - Please install [Yarn](https://yarnpkg.com/getting-started/install) as the package manager.
 - Make sure you have these following Environtment variables set: *(in local development they will be preset)*
-  - `NEXTAUTH_URL` Can be made via the command `openssl  rand -base64 32` (generates a random base64 string with the length of 32 characters)
+  - `NEXTAUTH_URL`
+  - `NEXTAUTH_SECRET` Can be made via the command `openssl  rand -base64 32` (generates a random base64 string with the length of 32 characters)
   - `DATABASE_URL`
 
 ### Local development
