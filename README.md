@@ -5,7 +5,7 @@ This is a starterpack which includes [ReactJs](https://reactjs.org/), [tRPC](htt
 
 ## Deployments
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foezguerisbert%2Fweb-fullstack-starter&env=NEXTAUTH_URL,DATABASE_URL&demo-title=Web-FullStack-Starter&demo-description=This%20is%20a%20starterpack%20with%20ReactJs%2C%20tRPC%2C%20Prisma%2C%20NextJs%2C%20Next-Auth%2C%20Next-SEO%20%26%20Chakra-UI&integration-ids=icfg_a2E6yKqZioe2GGUPPob03D3J&skippable-integrations=1)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foezguerisbert%2Fweb-fullstack-starter&env=NEXTAUTH_URL,DATABASE_URL&demo-title=Web-FullStack-Starter&demo-description=This%20is%20a%20starterpack%20with%20ReactJs%2C%20tRPC%2C%20Prisma%2C%20NextJs%2C%20Next-Auth%2C%20Next-SEO%20%26%20Chakra-UI&skippable-integrations=1)
 
 ## Requirements
 
