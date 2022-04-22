@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "yarn dev:docker && yarn dev:next",
+    "predev": "yarn dev:docker",
+    "dev": "yarn dev:next",
     "dev:next": "next dev",
     "predev:docker": "zx ./checkfiles.mjs",
     "dev:docker": "docker compose up -d",

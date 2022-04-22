@@ -1,6 +1,5 @@
-# Web FullStack Starterpack
+![Stacked Image](https://i.imgur.com/AWaUxYi.png)
 
-## TL-DR;
 This is a starterpack which includes [ReactJs](https://reactjs.org/), [tRPC](https://trpc.io/), [Prisma](https://www.prisma.io/), [NextJs](https://nextjs.org/), [Next-Auth](https://next-auth.js.org/), [Next-SEO](https://github.com/garmeeh/next-seo) & [Chakra-UI](https://chakra-ui.com/).
 
 ## Deployments

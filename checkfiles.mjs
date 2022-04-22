@@ -2,16 +2,15 @@
 
 import { existsSync, writeFileSync } from "fs";
 import path from "path";
+const DATABASE_URL = process.env.DATABASE_URL ?? "postgresql://root:root@localhost:5432/mydatabase?schema=public";
+const NEXTAUTH_SECRET = (process.env.NEXTAUTH_SECRET ?? (await quiet($`openssl  rand -base64 32`)))
+  .toString()
+  .replace("\n", "");
+const NEXTAUTH_URL = process.env.NEXTAUTH_URL ?? "http://localhost:3000/";
 
 const checkEnvFiles = {
-  ".env": `DATABASE_URL="${
-    process.env.DATABASE_URL ?? "postgresql://root:root@localhost:5432/mydatabase?schema=public"
-  }"\nNEXTAUTH_SECRET="${(process.env.NEXTAUTH_SECRET ?? (await quiet($`openssl  rand -base64 32`)))
-    .toString()
-    .replace("\n", "")}"\nNEXTAUTH_URL="${process.env.NEXTAUTH_URL ?? "http://localhost:3000/"}"`,
-  ".env.local": `POSTGRES_USER="root"
-POSTGRES_PASSWORD="root"
-POSTGRES_DB="mydatabase"`,
+  ".env": `DATABASE_URL="${DATABASE_URL}"\nNEXTAUTH_SECRET="${NEXTAUTH_SECRET}"\nNEXTAUTH_URL="${NEXTAUTH_URL}"`,
+  ".env.local": `POSTGRES_USER="root"\nPOSTGRES_PASSWORD="root"\nPOSTGRES_DB="mydatabase"`,
 };
 
 Object.entries(checkEnvFiles).forEach(([f, value]) => {
