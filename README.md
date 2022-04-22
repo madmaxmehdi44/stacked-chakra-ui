@@ -10,14 +10,14 @@ This is a starterpack which includes [ReactJs](https://reactjs.org/), [tRPC](htt
 ## Requirements
 
 - Please install [Yarn](https://yarnpkg.com/getting-started/install) as the package manager.
-- Make sure you have these following [Environtment](./example.env) variables set: *(in local development they will be preset)*
+- Make sure you have these following Environtment variables set: *(in local development they will be preset)*
   - `NEXTAUTH_URL` Can be made via the command `openssl  rand -base64 32` (generates a random base64 string with the length of 32 characters)
   - `DATABASE_URL`
 
 ### Local development
 
 - Make sure [Docker](https://www.docker.com/get-started/) and [Docker-Compose](https://docs.docker.com/compose/install/) is installed.
-- Make sure you have these following [Environtment](./example.env.local) variables set:
+- Make sure you have these following Environtment variables set: *(in local development they will be preset)*
   - `POSTGRES_USER`
   - `POSTGRES_PASSWORD`
   - `POSTGRES_DB`
