@@ -1,7 +1,11 @@
 # FullStack Starterpack
 
 ## TL-DR;
-This is a starterpack with [ReactJs](https://reactjs.org/), [tRPC](https://trpc.io/), [NextJs](https://nextjs.org/), [Next-Auth](https://next-auth.js.org/), [Next-SEO](https://github.com/garmeeh/next-seo) & [Chakra-UI](https://chakra-ui.com/).
+This is a starterpack with [ReactJs](https://reactjs.org/), [tRPC](https://trpc.io/), [Prisma](https://www.prisma.io/), [NextJs](https://nextjs.org/), [Next-Auth](https://next-auth.js.org/), [Next-SEO](https://github.com/garmeeh/next-seo) & [Chakra-UI](https://chakra-ui.com/).
+
+## Deployments
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foezguerisbert%2Fweb-fullstack-starter&env=NEXTAUTH_URL,DATABASE_URL)
 
 ## Requirements
 

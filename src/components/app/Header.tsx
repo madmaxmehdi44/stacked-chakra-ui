@@ -1,5 +1,6 @@
 import { Container, Flex, HStack, useColorModeValue } from "@chakra-ui/react";
 import { PropsWithChildren } from "react";
+import { ColorModeSwitch } from "./ColorModeSwitch";
 
 export const Header = ({ children }: PropsWithChildren<{}>) => {
   const bgState = useColorModeValue("whiteAlpha.100", "#080808");
@@ -23,7 +24,10 @@ export const Header = ({ children }: PropsWithChildren<{}>) => {
             alignItems="center"
             justifyContent="space-between"
           >
-            {children}
+            <Flex w="full" flexDirection="row"></Flex>
+            <HStack spacing={3}>
+              <ColorModeSwitch />
+            </HStack>
           </HStack>
         </Container>
       </Container>
