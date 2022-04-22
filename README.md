@@ -24,4 +24,4 @@ This is a starterpack with [ReactJs](https://reactjs.org/), [tRPC](https://trpc.
 1. Click the `Use this template` button, create a repository with it.
 2. Clone the repository, and run the command `yarn`.
     - This will install all necessary dependencies.
-3. Setup [tRPC]() routes on the [src/server/routers/merge.ts](./src/server/routers/merge.ts) file (via `.merge`)
+3. Setup [tRPC](https://trpc.io/) routes on the [src/server/routers/merge.ts](./src/server/routers/merge.ts) file (via `.merge`)
