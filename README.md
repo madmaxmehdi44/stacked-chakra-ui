@@ -1,11 +1,11 @@
-# FullStack Starterpack
+# Web FullStack Starterpack
 
 ## TL-DR;
-This is a starterpack with [ReactJs](https://reactjs.org/), [tRPC](https://trpc.io/), [Prisma](https://www.prisma.io/), [NextJs](https://nextjs.org/), [Next-Auth](https://next-auth.js.org/), [Next-SEO](https://github.com/garmeeh/next-seo) & [Chakra-UI](https://chakra-ui.com/).
+This is a starterpack which includes [ReactJs](https://reactjs.org/), [tRPC](https://trpc.io/), [Prisma](https://www.prisma.io/), [NextJs](https://nextjs.org/), [Next-Auth](https://next-auth.js.org/), [Next-SEO](https://github.com/garmeeh/next-seo) & [Chakra-UI](https://chakra-ui.com/).
 
 ## Deployments
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foezguerisbert%2Fweb-fullstack-starter&env=NEXTAUTH_URL,DATABASE_URL)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foezguerisbert%2Fweb-fullstack-starter&env=NEXTAUTH_URL,DATABASE_URL&demo-title=Web-FullStack-Starter&demo-description=This%20is%20a%20starterpack%20with%20ReactJs%2C%20tRPC%2C%20Prisma%2C%20NextJs%2C%20Next-Auth%2C%20Next-SEO%20%26%20Chakra-UI&integration-ids=icfg_a2E6yKqZioe2GGUPPob03D3J&skippable-integrations=1)
 
 ## Requirements
 
