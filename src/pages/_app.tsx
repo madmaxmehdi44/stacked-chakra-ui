@@ -16,7 +16,7 @@ import type { AppProps } from "next/app";
 import { StrictMode } from "react";
 import superjson from "superjson";
 import { AllInOnProvider } from "../components/app/AllInOneProvider";
-import { AppShell } from "../components/app/AppWrapper";
+import { AppShell } from "../components/app/AppShell";
 import type { AppRouter } from "../server/routers/_app";
 import "../styles/globals.css";
 

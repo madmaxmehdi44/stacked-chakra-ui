@@ -3,7 +3,7 @@ import { appRouter } from "../../../server/routers/_app";
 import { createContext } from "../../../server/context";
 
 export default trpcNext.createNextApiHandler({
-  router: appRouter,
+  router: appRouter(),
   createContext,
   onError({ error }) {
     if (error.code === "INTERNAL_SERVER_ERROR") {

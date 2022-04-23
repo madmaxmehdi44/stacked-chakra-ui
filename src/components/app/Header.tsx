@@ -24,7 +24,7 @@ export const Header = ({ children }: PropsWithChildren<{}>) => {
             <Flex w="full" flexDirection="row">
               <Link href="/" passHref>
                 <Box as="a" w="40px" h="full" padding="10px" borderRadius="full">
-                  <Logo width="100%" height="100%" />
+                  <Logo small />
                 </Box>
               </Link>
             </Flex>

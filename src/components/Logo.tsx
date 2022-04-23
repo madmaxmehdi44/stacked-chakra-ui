@@ -1,25 +1,27 @@
-export const Logo = (props: JSX.IntrinsicElements["svg"]) => {
+import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
+
+interface LogoProps {
+  small?: boolean;
+}
+
+export const Logo = (props: LogoProps) => {
+  const size = !props.small ? "150px" : "40px";
+  const fontSize = !props.small ? "32pt" : "6pt";
+  const bgColor = useColorModeValue("black", "white");
+  const color = useColorModeValue("white", "black");
   return (
-    <svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="M12.2509 3.3478L12.2509 3.34782L12.2599 3.35092L111.459 37.6869L111.472 37.6914C112.947 38.1903 114.224 39.1464 115.117 40.4208C116.011 41.6953 116.475 43.2215 116.442 44.7777L116.441 44.8019C116.427 46.3545 115.915 47.8617 114.981 49.1019C114.047 50.3421 112.739 51.25 111.251 51.6922L111.229 51.6987L66.3464 65.5855C65.7149 65.7808 65.2208 66.2756 65.0262 66.9072L51.198 111.79L51.1906 111.815C50.7548 113.297 49.85 114.598 48.612 115.522C47.374 116.447 45.8696 116.945 44.3246 116.941H44.3203H44.1445L44.1304 116.941C42.5986 116.952 41.1027 116.478 39.8568 115.587C38.6109 114.696 37.6788 113.434 37.1941 111.98L37.1869 111.959L2.85092 12.7599L2.85095 12.7599L2.8478 12.7509C2.38694 11.4396 2.30602 10.0247 2.61439 8.66943C2.92276 7.31412 3.60785 6.07354 4.59069 5.09069C5.57354 4.10785 6.81412 3.42276 8.16943 3.11439C9.52474 2.80602 10.9396 2.88694 12.2509 3.3478Z"
-        stroke="url(#paint0_linear_2_4)"
-        strokeWidth="4"
-        strokeLinejoin="round"
-      />
-      <defs>
-        <linearGradient
-          id="paint0_linear_2_4"
-          x1="0.296876"
-          y1="-44.125"
-          x2="103.031"
-          y2="187.906"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#00FFA3" />
-          <stop offset="1" stopColor="#0085FF" />
-        </linearGradient>
-      </defs>
-    </svg>
+    <Flex
+      alignItems="center"
+      justifyContent="center"
+      w={size}
+      h={size}
+      bgColor={bgColor}
+      borderRadius="full"
+      color={color}
+      fontSize={fontSize}
+      fontWeight="bold"
+    >
+      Logo
+    </Flex>
   );
 };
