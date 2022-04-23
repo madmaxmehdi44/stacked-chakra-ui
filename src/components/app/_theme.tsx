@@ -11,7 +11,7 @@ export const theme = extendTheme({
   },
   styles: styles,
   colors: {
-    brand: baseTheme.colors.teal,
+    brand: baseTheme.colors.blue,
   },
   config: { initialColorMode: "dark", useSystemColorMode: true },
 });

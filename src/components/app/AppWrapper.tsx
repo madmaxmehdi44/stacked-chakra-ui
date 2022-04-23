@@ -1,25 +1,19 @@
-import { Container, Flex, useColorModeValue } from "@chakra-ui/react";
+import { Container, Flex } from "@chakra-ui/react";
 import { PropsWithChildren } from "react";
+import { Header } from "./Header";
 
-export const AppWrapper = ({ children }: PropsWithChildren<{}>) => {
-  const pixelDot = useColorModeValue("#CECECE", "#2E2E2E");
-
+export const AppShell = ({ children, full = false }: PropsWithChildren<{ full: boolean }>) => {
+  const margin = full ? "" : "-20px";
   return (
-    <Flex
-      w="full"
-      minHeight="100vh"
-      flexDirection="column"
-      sx={{
-        backgroundImage: `radial-gradient(${pixelDot} 1px, transparent 1px)`,
-        backgroundSize: "20px 20px",
-        backgroundAttachment: "fixed",
-      }}
-    >
-      <Container maxW="container.lg">
-        <Flex w="full" flexDirection="column" paddingBottom={6} marginTop={20} borderRadius="md">
-          {children}
-        </Flex>
-      </Container>
-    </Flex>
+    <>
+      <Header />
+      <Flex w="full" flexDirection="column">
+        <Container maxW={`calc(100vw${margin})`} paddingX={4} minH="100vh">
+          <Flex w="full" flexDirection="column" paddingBottom={6} marginTop={20} borderRadius="md">
+            {children}
+          </Flex>
+        </Container>
+      </Flex>
+    </>
   );
 };

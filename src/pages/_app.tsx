@@ -13,13 +13,10 @@ import { GetServerSidePropsContext } from "next";
 import { getSession } from "next-auth/react";
 import { DefaultSeo } from "next-seo";
 import type { AppProps } from "next/app";
-import Head from "next/head";
 import { StrictMode } from "react";
 import superjson from "superjson";
 import { AllInOnProvider } from "../components/app/AllInOneProvider";
-import { AppWrapper } from "../components/app/AppWrapper";
-import { Header } from "../components/app/Header";
-import { PageFlow } from "../components/PageFlow";
+import { AppShell } from "../components/app/AppWrapper";
 import type { AppRouter } from "../server/routers/_app";
 import "../styles/globals.css";
 
@@ -28,11 +25,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <StrictMode>
       <DefaultSeo />
       <AllInOnProvider pageProps={pageProps}>
-        <PageFlow />
-        <Header />
-        <AppWrapper>
+        <AppShell full>
           <Component {...pageProps} />
-        </AppWrapper>
+        </AppShell>
       </AllInOnProvider>
     </StrictMode>
   );

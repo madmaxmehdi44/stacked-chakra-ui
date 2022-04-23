@@ -14,9 +14,9 @@ const Index: NextPage = (props: inferSSRProps<typeof getServerSideProps>) => {
             <Heading size="4xl">Stacked.</Heading>
             <Heading size="md">simple and easy to set up!</Heading>
           </VStack>
-          <Link passHref href="/about">
+          <Link passHref href="/">
             <Button as="a" size="lg" borderRadius="12px">
-              About Page
+              Index Page
             </Button>
           </Link>
         </VStack>
