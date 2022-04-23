@@ -2,7 +2,7 @@ import { Button, ButtonProps, Flex, Heading, HStack, VStack } from "@chakra-ui/r
 import type { GetServerSidePropsContext, NextPage } from "next";
 import Link from "next/link";
 import { FlexSpinner } from "../components/app/FlexSpinner";
-import { Logo } from "../components/Logo";
+import { Logo } from "../components/app/Logo";
 import { inferSSRProps } from "../utils/inferSSRProps";
 import { trpc } from "../utils/trpc";
 

@@ -1,6 +1,6 @@
-import { Container, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { PropsWithChildren } from "react";
-import { PageFlow } from "../PageFlow";
+import { PageFlow } from "./PageFlow";
 
 export const AppShell = ({ children }: PropsWithChildren<{}>) => (
   <>
