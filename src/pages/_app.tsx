@@ -25,7 +25,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <StrictMode>
       <DefaultSeo />
       <AllInOnProvider pageProps={pageProps}>
-        <AppShell full>
+        <AppShell>
           <Component {...pageProps} />
         </AppShell>
       </AllInOnProvider>
