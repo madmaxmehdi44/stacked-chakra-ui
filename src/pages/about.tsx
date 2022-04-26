@@ -1,7 +1,6 @@
-import { Button, ButtonProps, Flex, Heading, HStack, VStack } from "@chakra-ui/react";
+import { Button, Flex, Heading, Spinner, VStack } from "@chakra-ui/react";
 import type { GetServerSidePropsContext, NextPage } from "next";
 import Link from "next/link";
-import { FlexSpinner } from "../components/app/FlexSpinner";
 import { Logo } from "../components/app/Logo";
 import { inferSSRProps } from "../utils/inferSSRProps";
 import { trpc } from "../utils/trpc";
@@ -15,7 +14,11 @@ const Index: NextPage = (props: inferSSRProps<typeof getServerSideProps>) => {
           <Logo />
           <VStack spacing="6">
             <Heading size="4xl">Stacked.</Heading>
-            {isLoading && <FlexSpinner />}
+            {isLoading && (
+              <Flex width="full" height="full" alignItems="center" justifyContent="center">
+                <Spinner />
+              </Flex>
+            )}
             {!isLoading && !error && <Heading size="md">{data}</Heading>}
           </VStack>
           <Link passHref href="/">

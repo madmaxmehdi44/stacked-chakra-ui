@@ -4,14 +4,12 @@ import { AppProps } from "next/app";
 import { IconContext } from "phosphor-react";
 import { PropsWithChildren } from "react";
 
-import { theme } from "./_theme";
-
 export const AllInOnProvider = ({ pageProps, children }: PropsWithChildren<{ pageProps: AppProps["pageProps"] }>) => {
   const colorModeManager =
     typeof pageProps.cookies === "string" ? cookieStorageManager(pageProps.cookies) : localStorageManager;
   return (
     <SessionProvider session={pageProps.session}>
-      <ChakraProvider theme={theme} colorModeManager={colorModeManager}>
+      <ChakraProvider colorModeManager={colorModeManager}>
         <IconContext.Provider
           value={{
             size: 20,
