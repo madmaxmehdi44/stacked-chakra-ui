@@ -29,7 +29,7 @@
   ],
   "author": "Özgür Isbert",
   "repository": {
-    "url": "https://github.com/oezguerisbert/web-fullstack-starter.git"
+    "url": "https://github.com/itsstacked/stacked-chakra-ui.git"
   },
   "dependencies": {
     "@chakra-ui/react": "1.8.8",
